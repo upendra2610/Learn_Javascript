@@ -1,5 +1,5 @@
 // simulating coin toss using promises
-
+//step 1: create a promise instance
 let promis1 = new Promise(function (resolve, reject) {
   setTimeout(function () {
     const isHead = Math.random() >= 0.5;
@@ -11,8 +11,9 @@ let promis1 = new Promise(function (resolve, reject) {
     }
   }, 2000);
 });
-// handling the promise
 
+
+//Step 2: handling the promise
 promis1.then(function (output) {
   console.log(output);
 }); // works if promise is resolved
